@@ -6,6 +6,10 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { ContactoComponent } from './pages/contacto/contacto.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { ErrorComponent } from './pages/error/error.component';
+import {AppRoutingModule } from './app-routing/app-routing.module';
+import { AcercadeluisComponent } from './pages/acercadeluis/acercadeluis.component';
+import { ContactoluisComponent } from './pages/contactoluis/contactoluis.component';
+
 
 @NgModule({
   declarations: [
@@ -13,10 +17,14 @@ import { ErrorComponent } from './pages/error/error.component';
     InicioComponent,
     ContactoComponent,
     AcercadeComponent,
-    ErrorComponent
+    ErrorComponent,
+    AcercadeluisComponent,
+    ContactoluisComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
